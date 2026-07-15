@@ -45,7 +45,7 @@ export default function Hero() {
 
       <motion.div
         style={{ opacity: fade }}
-        className="relative mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-[1.35fr_0.9fr] md:gap-8 md:px-10"
+        className="relative mx-auto grid w-full max-w-[90rem] grid-cols-1 items-center gap-12 px-6 md:grid-cols-[1.35fr_0.9fr] md:gap-8 md:px-10"
       >
         <motion.div
           variants={container}

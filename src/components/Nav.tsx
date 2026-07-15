@@ -32,7 +32,7 @@ export default function Nav() {
       className="fixed inset-x-0 top-0 z-50 px-4 pt-4 md:px-6"
     >
       <header
-        className={`glass mx-auto max-w-6xl rounded-[28px] transition-shadow duration-300 ${
+        className={`glass mx-auto max-w-[90rem] rounded-[28px] transition-shadow duration-300 ${
           scrolled || open ? "glass-strong" : ""
         }`}
       >

@@ -12,7 +12,7 @@ export default function Skills() {
       id="skills"
       className="overflow-hidden border-y border-border bg-surface/60 py-28 md:py-36"
     >
-      <div className="mx-auto max-w-6xl px-6 md:px-10">
+      <div className="mx-auto max-w-[90rem] px-6 md:px-10">
         <Reveal>
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-accent">
             Skills &amp; Tools
@@ -49,7 +49,7 @@ export default function Skills() {
         </div>
       </Reveal>
 
-      <div className="mx-auto mt-16 max-w-6xl px-6 md:px-10">
+      <div className="mx-auto mt-16 max-w-[90rem] px-6 md:px-10">
         <Reveal delay={0.1}>
           <p className="mb-6 text-sm text-muted">Tools I edit with</p>
           <div className="flex flex-wrap gap-3">

@@ -4,7 +4,7 @@ import { workCategories } from "@/lib/data";
 
 export default function SelectedWork() {
   return (
-    <section id="work" className="mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36">
+    <section id="work" className="mx-auto max-w-[90rem] px-6 py-28 md:px-10 md:py-36">
       <Reveal>
         <p className="mb-4 text-sm uppercase tracking-[0.2em] text-accent">
           Selected Work

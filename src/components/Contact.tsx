@@ -5,7 +5,7 @@ export default function Contact() {
   const year = new Date().getFullYear();
 
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36">
+    <section id="contact" className="mx-auto max-w-[90rem] px-6 py-28 md:px-10 md:py-36">
       <Reveal>
         <p className="mb-4 text-sm uppercase tracking-[0.2em] text-accent">
           Contact

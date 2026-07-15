@@ -8,7 +8,7 @@ export default function About() {
       id="about"
       className="border-y border-border bg-surface/60 px-6 py-28 md:px-10 md:py-36"
     >
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
+      <div className="mx-auto grid max-w-[90rem] grid-cols-1 gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <Reveal>
           <div className="glass aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[2rem] p-2">
             <div className="relative h-full w-full overflow-hidden rounded-[1.5rem]">
