@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f7f4ec;
+  --surface: #ffffff;
+  --surface-raised: #fffdf8;
+  --foreground: #221f1a;
+  --muted: #6b655a;
+  --accent: #d97757;
+  --accent-strong: #c1613f;
+  --accent-pop: #f2b705;
+  --border: #e6e1d4;
+}
+
+.dark {
+  --background: #16140f;
+  --surface: #211e18;
+  --surface-raised: #26221b;
+  --foreground: #f3efe4;
+  --muted: #a8a196;
+  --accent: #e08862;
+  --accent-strong: #eda179;
+  --accent-pop: #f2b705;
+  --border: #332f27;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-pop: var(--accent-pop);
+  --color-border: var(--border);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--surface);
+}
