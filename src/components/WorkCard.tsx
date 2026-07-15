@@ -48,7 +48,7 @@ export default function WorkCard({ index, title, description, tag }: WorkCardPro
       style={{ rotateX, rotateY, transformPerspective: 900 }}
       whileHover={{ y: -8 }}
       transition={{ type: "spring", stiffness: 300, damping: 22 }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-surface p-1.5"
+      className="glass group relative flex h-full flex-col overflow-hidden rounded-3xl p-1.5"
     >
       <div
         className={`relative flex aspect-[4/3] w-full items-end overflow-hidden rounded-2xl bg-gradient-to-br ${palettes[index % palettes.length]}`}
@@ -56,7 +56,7 @@ export default function WorkCard({ index, title, description, tag }: WorkCardPro
         <span className="absolute right-5 top-5 font-display text-6xl font-medium text-foreground/10 transition-colors duration-500 group-hover:text-accent/20">
           {String(index + 1).padStart(2, "0")}
         </span>
-        <span className="m-5 inline-flex w-fit items-center rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs text-muted backdrop-blur">
+        <span className="glass m-5 inline-flex w-fit items-center rounded-full px-3 py-1 text-xs text-muted">
           {tag}
         </span>
       </div>

@@ -10,14 +10,16 @@ export default function About() {
     >
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <Reveal>
-          <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[2rem]">
-            <Image
-              src={profile.photoUrl}
-              alt={`${profile.name} portrait`}
-              fill
-              sizes="(min-width: 768px) 24vw, 80vw"
-              className="object-cover"
-            />
+          <div className="glass aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[2rem] p-2">
+            <div className="relative h-full w-full overflow-hidden rounded-[1.5rem]">
+              <Image
+                src={profile.photoUrl}
+                alt={`${profile.name} portrait`}
+                fill
+                sizes="(min-width: 768px) 24vw, 80vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </Reveal>
 

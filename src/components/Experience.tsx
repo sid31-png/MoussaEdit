@@ -26,7 +26,7 @@ export default function Experience() {
                 <p className="mt-1 text-sm text-muted">
                   {role.start} — {role.end}
                 </p>
-                <p className="mt-3 inline-flex items-center rounded-full border border-border px-3 py-1 text-xs text-accent">
+                <p className="glass mt-3 inline-flex items-center rounded-full px-3 py-1 text-xs text-accent">
                   {role.role}
                 </p>
               </div>
@@ -50,10 +50,7 @@ export default function Experience() {
           </p>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {education.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-border bg-surface p-6"
-              >
+              <div key={item.title} className="glass rounded-2xl p-6">
                 <p className="font-medium leading-snug">{item.title}</p>
                 <p className="mt-2 text-sm text-muted">{item.school}</p>
               </div>

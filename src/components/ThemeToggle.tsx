@@ -47,12 +47,12 @@ export default function ThemeToggle() {
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       aria-pressed={isDark}
-      className="relative flex h-8 w-14 shrink-0 items-center rounded-full border border-border bg-surface px-1 transition-colors cursor-pointer"
+      className="glass relative flex h-8 w-14 shrink-0 items-center rounded-full px-1 transition-colors cursor-pointer"
     >
       <motion.span
         layout
         transition={{ type: "spring", stiffness: 500, damping: 30 }}
-        className="flex h-6 w-6 items-center justify-center rounded-full bg-accent text-surface"
+        className="flex h-6 w-6 items-center justify-center rounded-full bg-accent text-white shadow-[0_2px_8px_rgba(0,0,0,0.25)]"
         style={{ marginLeft: isDark ? "calc(100% - 1.5rem)" : "0" }}
       >
         {mounted ? isDark ? <MoonIcon /> : <SunIcon /> : null}

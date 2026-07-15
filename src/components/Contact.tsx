@@ -47,7 +47,7 @@ export default function Contact() {
           <a
             href={profile.cvUrl}
             download
-            className="rounded-full border border-border px-4 py-2 transition-colors hover:border-accent hover:text-accent"
+            className="glass rounded-full px-4 py-2 transition-colors hover:text-accent"
           >
             Download Résumé
           </a>

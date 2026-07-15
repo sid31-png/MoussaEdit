@@ -40,8 +40,8 @@ export default function Hero() {
       ref={ref}
       className="relative flex min-h-[100svh] items-center overflow-hidden pt-28 pb-16"
     >
-      <div className="pointer-events-none absolute -right-40 top-10 h-[420px] w-[420px] rounded-full bg-accent/10 blur-3xl md:h-[560px] md:w-[560px]" />
-      <div className="pointer-events-none absolute -left-32 bottom-0 h-[320px] w-[320px] rounded-full bg-accent-pop/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-40 top-10 h-[420px] w-[420px] rounded-full bg-accent/20 blur-3xl md:h-[560px] md:w-[560px]" />
+      <div className="pointer-events-none absolute -left-32 bottom-0 h-[320px] w-[320px] rounded-full bg-accent-pop/20 blur-3xl" />
 
       <motion.div
         style={{ opacity: fade }}
@@ -81,13 +81,13 @@ export default function Hero() {
           <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
             <a
               href="#work"
-              className="group relative overflow-hidden rounded-full bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-transform duration-300 hover:-translate-y-0.5"
+              className="group relative overflow-hidden rounded-full bg-accent px-7 py-3.5 text-sm font-medium text-white shadow-[0_8px_24px_-6px_var(--accent)] transition-transform duration-300 hover:-translate-y-0.5"
             >
               <span className="relative z-10">View my work</span>
             </a>
             <a
               href="#contact"
-              className="rounded-full border border-border px-7 py-3.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
+              className="glass rounded-full px-7 py-3.5 text-sm font-medium transition-colors hover:text-accent"
             >
               Let&apos;s talk
             </a>
@@ -101,16 +101,17 @@ export default function Hero() {
           style={{ y: photoY }}
           className="order-1 mx-auto w-full max-w-[280px] md:order-2 md:max-w-none"
         >
-          <div className="group relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-surface shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)]">
-            <Image
-              src={profile.photoUrl}
-              alt={`Portrait of ${profile.name}, ${profile.role}`}
-              fill
-              priority
-              sizes="(min-width: 768px) 32vw, 70vw"
-              className="object-cover grayscale transition-all duration-700 ease-out group-hover:grayscale-0 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-border" />
+          <div className="glass group relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] p-2">
+            <div className="relative h-full w-full overflow-hidden rounded-[1.5rem]">
+              <Image
+                src={profile.photoUrl}
+                alt={`Portrait of ${profile.name}, ${profile.role}`}
+                fill
+                priority
+                sizes="(min-width: 768px) 32vw, 70vw"
+                className="object-cover grayscale transition-all duration-700 ease-out group-hover:grayscale-0 group-hover:scale-105"
+              />
+            </div>
           </div>
         </motion.div>
       </motion.div>

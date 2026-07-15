@@ -39,7 +39,7 @@ export default function Skills() {
               {marqueeItems.map((skill, i) => (
                 <span
                   key={`${skill}-${i}`}
-                  className="flex shrink-0 items-center rounded-full border border-border bg-background px-6 py-3 text-sm font-medium"
+                  className="glass flex shrink-0 items-center rounded-full px-6 py-3 text-sm font-medium"
                 >
                   {skill}
                 </span>
@@ -56,7 +56,7 @@ export default function Skills() {
             {tools.map((tool) => (
               <span
                 key={tool}
-                className="group inline-flex items-center gap-2 rounded-full bg-accent/10 px-5 py-2.5 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-surface"
+                className="group inline-flex items-center gap-2 rounded-full bg-accent/10 px-5 py-2.5 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-white"
               >
                 {tool}
               </span>
